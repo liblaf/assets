@@ -1,6 +1,6 @@
-import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
-import { PluginOptions as SearchPluginOptions } from "@easyops-cn/docusaurus-search-local";
+import type { Config } from "@docusaurus/types";
+import type { PluginOptions as SearchPluginOptions } from "@easyops-cn/docusaurus-search-local";
 
 const config: Config = {
   title: "Assets",
