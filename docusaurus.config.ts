@@ -1,6 +1,6 @@
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
-import type { PluginOptions as SearchPluginOptions } from "@easyops-cn/docusaurus-search-local";
+import type * as SearchLocal from "@easyops-cn/docusaurus-search-local";
 
 const config: Config = {
   title: "Assets",
@@ -9,6 +9,11 @@ const config: Config = {
   favicon: "/letter/ico/a.ico",
 
   themeConfig: {
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -24,10 +29,6 @@ const config: Config = {
           href: "https://github.com/liblaf/assets",
           position: "right",
         },
-        {
-          type: "search",
-          position: "right",
-        },
       ],
     },
   } satisfies Preset.ThemeConfig,
@@ -40,7 +41,7 @@ const config: Config = {
         hashed: true,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
-      } satisfies SearchPluginOptions,
+      } satisfies SearchLocal.PluginOptions,
     ],
   ],
 
@@ -50,10 +51,8 @@ const config: Config = {
       {
         docs: {
           routeBasePath: "/",
-          sidebarPath: "./sidebars.ts",
           editUrl: "https://github.com/liblaf/assets/tree/main/",
         },
-        pages: false,
       } satisfies Preset.Options,
     ],
   ],
