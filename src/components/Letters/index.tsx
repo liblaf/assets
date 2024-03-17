@@ -12,7 +12,7 @@ export default function Letters({ format }: { format: string }): JSX.Element {
             className={styles.letter}
             src={`/letter/${format}/${letter}.${format}`}
           />
-        )
+        ),
       )}
     </div>
   );
