@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkassets=self.webpackChunkassets||[]).push([[686],{6082:a=>{a.exports=JSON.parse('{"title":"Avatar","slug":"/category/avatar","permalink":"/category/avatar","navigation":{"previous":{"title":"Assets","permalink":"/"},"next":{"title":"JPG","permalink":"/avatar/jpg"}}}')}}]);
