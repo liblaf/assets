@@ -1,0 +1,100 @@
+Results of cspell linter (version 8.14.1)
+See documentation on https://megalinter.io/8.0.0/descriptors/spell_cspell/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+ 1/30 .github/auto-label.yaml 897.04ms
+ 2/30 .github/blunderbuss.yml 145.86ms X
+.github/blunderbuss.yml:4:5       - Unknown word (liblaf)     -- - liblaf
+	 Suggestions: [lila, libau, libia, libra, libya]
+.github/blunderbuss.yml:7:5       - Unknown word (liblaf)     -- - liblaf
+	 Suggestions: [lila, libau, libia, libra, libya]
+ 3/30 .github/megalinter/.checkov.yml 8.51ms
+ 4/30 .github/megalinter/.devskim.json 158.07ms
+ 5/30 .github/renovate.json 3.45ms
+ 6/30 .github/sync-repo-settings.yaml 1.59ms
+ 7/30 .github/workflows/ci.yaml 6.22ms
+ 8/30 .github/workflows/megalinter.yaml 97.58ms X
+.github/workflows/megalinter.yaml:179:15    - Unknown word (stefanzweifel) -- uses: stefanzweifel/git-auto-commit-action
+	 Suggestions: []
+ 9/30 .gitignore 17.13ms
+10/30 .mega-linter.yaml 427.07ms X
+.mega-linter.yaml:34:12     - Unknown word (ISORT)      -- - PYTHON_ISORT
+	 Suggestions: [SORT, iost, IOST, IGOR, ISAR]
+.mega-linter.yaml:35:12     - Unknown word (MYPY)       -- - PYTHON_MYPY
+	 Suggestions: [MOPY, MYOPY, MACY, MANY, MAPS]
+.mega-linter.yaml:36:12     - Unknown word (PYLINT)     -- - PYTHON_PYLINT
+	 Suggestions: [PLYING, PINT, PAINT, PLANT, PLINK]
+.mega-linter.yaml:42:12     - Unknown word (DEVSKIM)    -- REPOSITORY_DEVSKIM_CONFIG_FILE: .github
+	 Suggestions: [DESK, DEVI, DKIM, DEISM, DENIM]
+.mega-linter.yaml:42:53     - Unknown word (devskim)    -- .github/megalinter/.devskim.json
+	 Suggestions: [desk, devi, dkim, deism, denim]
+.mega-linter.yaml:43:12     - Unknown word (KICS)       -- REPOSITORY_KICS_CONFIG_FILE: .github
+	 Suggestions: [KI'S, KICK, KIDS, KINS, KIPS]
+.mega-linter.yaml:43:49     - Unknown word (kics)       -- .github/megalinter/kics.config
+	 Suggestions: [ki's, kick, kids, kins, kips]
+11/30 .pre-commit-config.yaml 104.19ms X
+.pre-commit-config.yaml:10:13     - Unknown word (commitizen) -- - id: commitizen
+	 Suggestions: [comities, commitid, committed, committee, committer]
+.pre-commit-config.yaml:38:20     - Unknown word (bidi)       -- - id: forbid-bidi-controls
+	 Suggestions: [bide, bids, bini, Bini, bid]
+12/30 .vscode/settings.json 1.83ms
+13/30 babel.config.js 120.25ms
+14/30 docs/avatar/_category_.json 2.96ms
+15/30 docs/avatar/jpg.mdx 106.19ms
+16/30 docs/avatar/png.mdx 2.88ms
+17/30 docs/letter/_category_.json 2.22ms
+18/30 docs/letter/ico.mdx 2.23ms
+19/30 docs/letter/png.mdx 1.82ms
+20/30 docs/letter/svg.mdx 2.36ms
+21/30 docs/README.mdx 1.80ms
+22/30 docusaurus.config.ts 14.04ms
+23/30 e78fd5cc-71e0-4687-ad38-e559a516966a-megalinter_file_names_cspell.txt 116.73ms X
+e78fd5cc-71e0-4687-ad38-e559a516966a-megalinter_file_names_cspell.txt:5:20      - Unknown word (devskim)    -- github megalinter devskim
+	 Suggestions: [desk, devi, dkim, deism, denim]
+e78fd5cc-71e0-4687-ad38-e559a516966a-megalinter_file_names_cspell.txt:30:8      - Unknown word (nojekyll)   -- static nojekyll
+	 Suggestions: [novell]
+24/30 Makefile 10.29ms
+25/30 package.json 4.85ms
+26/30 README.md 7.71ms
+27/30 src/components/Avatars/styles.module.css 10.72ms
+28/30 src/components/Letters/styles.module.css 1.40ms
+29/30 static/.nojekyll 1.39ms
+30/30 tsconfig.json 1.90ms
+CSpell: Files checked: 30, Issues found: 14 in 5 files.
+
+
+You can skip this misspellings by defining the following .cspell.json file at the root of your repository
+Of course, please correct real typos before :)
+
+{
+    "version": "0.2",
+    "language": "en",
+    "ignorePaths": [
+        "**/node_modules/**",
+        "**/vscode-extension/**",
+        "**/.git/**",
+        "**/.pnpm-lock.json",
+        ".vscode",
+        "package-lock.json",
+        "megalinter-reports"
+    ],
+    "words": [
+        "DEVSKIM",
+        "ISORT",
+        "KICS",
+        "MYPY",
+        "PYLINT",
+        "bidi",
+        "commitizen",
+        "devskim",
+        "kics",
+        "liblaf",
+        "nojekyll",
+        "stefanzweifel"
+    ]
+}
+
+
+You can also copy-paste megalinter-reports/.cspell.json at the root of your repository

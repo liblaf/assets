@@ -1,0 +1,9 @@
+Results of ts-standard linter (version 12.0.2)
+See documentation on https://megalinter.io/8.0.0/descriptors/typescript_ts_standard/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+ts-standard: Standard for TypeScript! (https://github.com/standard/ts-standard)
+  docusaurus.config.ts:0:0: Parsing error: File '@docusaurus/tsconfig' not found. (null)
+

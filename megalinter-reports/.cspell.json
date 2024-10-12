@@ -1,0 +1,22 @@
+{
+    "allowCompoundWords": true,
+    "ignorePaths": [
+        "**/*-lock.*",
+        "**/*.lock",
+        "**/.cspell.json"
+    ],
+    "words": [
+        "DEVSKIM",
+        "ISORT",
+        "KICS",
+        "MYPY",
+        "PYLINT",
+        "bidi",
+        "commitizen",
+        "devskim",
+        "kics",
+        "liblaf",
+        "nojekyll",
+        "stefanzweifel"
+    ]
+}

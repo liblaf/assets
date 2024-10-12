@@ -1,0 +1,59 @@
+Results of trivy linter (version 0.54.1)
+See documentation on https://megalinter.io/8.0.0/descriptors/repository_trivy/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+2024-10-12T11:55:43Z	INFO	[db] Need to update DB
+2024-10-12T11:55:43Z	INFO	[db] Downloading DB...	repository="ghcr.io/aquasecurity/trivy-db:2"
+39.04 MiB / 54.20 MiB [------------------------------------------->_________________] 72.02% ? p/s ?54.20 MiB / 54.20 MiB [----------------------------------------------------------->] 100.00% ? p/s ?54.20 MiB / 54.20 MiB [----------------------------------------------------------->] 100.00% ? p/s ?54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 25.44 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 25.44 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 25.44 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 23.80 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 23.80 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 23.80 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 22.27 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 22.27 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 22.27 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 20.83 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 20.83 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 20.83 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [---------------------------------------------->] 100.00% 19.49 MiB p/s ETA 0s54.20 MiB / 54.20 MiB [-------------------------------------------------] 100.00% 17.55 MiB p/s 3.3s2024-10-12T11:55:47Z	INFO	[vuln] Vulnerability scanning is enabled
+2024-10-12T11:55:47Z	INFO	[misconfig] Misconfiguration scanning is enabled
+2024-10-12T11:55:47Z	INFO	Need to update the built-in policies
+2024-10-12T11:55:47Z	INFO	Downloading the built-in policies...
+74.86 KiB / 74.86 KiB [-----------------------------------------------------------] 100.00% ? p/s 0s2024-10-12T11:55:47Z	INFO	[pnpm] To collect the license information of packages, "pnpm install" needs to be performed beforehand	dir="node_modules"
+2024-10-12T11:55:48Z	INFO	Number of language-specific files	num=1
+2024-10-12T11:55:48Z	INFO	[pnpm] Detecting vulnerabilities...
+2024-10-12T11:55:48Z	INFO	Detected config files	num=0
+
+For OSS Maintainers: VEX Notice
+--------------------------------
+If you're an OSS maintainer and Trivy has detected vulnerabilities in your project that you believe are not actually exploitable, consider issuing a VEX (Vulnerability Exploitability eXchange) statement.
+VEX allows you to communicate the actual status of vulnerabilities in your project, improving security transparency and reducing false positives for your users.
+Learn more and start using VEX: https://aquasecurity.github.io/trivy/v0.54/docs/supply-chain/vex/repo#publishing-vex-documents
+
+To disable this notice, set the TRIVY_DISABLE_VEX_NOTICE environment variable.
+
+
+pnpm-lock.yaml (pnpm)
+=====================
+Total: 8 (UNKNOWN: 0, LOW: 1, MEDIUM: 3, HIGH: 4, CRITICAL: 0)
+
+┌────────────────┬────────────────┬──────────┬────────┬───────────────────┬────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│    Library     │ Vulnerability  │ Severity │ Status │ Installed Version │           Fixed Version            │                            Title                             │
+├────────────────┼────────────────┼──────────┼────────┼───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ body-parser    │ CVE-2024-45590 │ HIGH     │ fixed  │ 1.20.2            │ 1.20.3                             │ body-parser: Denial of Service Vulnerability in body-parser  │
+│                │                │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-45590                   │
+├────────────────┼────────────────┼──────────┤        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ cookie         │ CVE-2024-47764 │ LOW      │        │ 0.6.0             │ 0.7.0                              │ cookie: cookie accepts cookie name, path, and domain with    │
+│                │                │          │        │                   │                                    │ out of bounds...                                             │
+│                │                │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-47764                   │
+├────────────────┼────────────────┼──────────┤        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ express        │ CVE-2024-43796 │ MEDIUM   │        │ 4.19.2            │ 4.20.0, 5.0.0                      │ express: Improper Input Handling in Express Redirects        │
+│                │                │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-43796                   │
+├────────────────┼────────────────┼──────────┤        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ path-to-regexp │ CVE-2024-45296 │ HIGH     │        │ 0.1.7             │ 1.9.0, 0.1.10, 8.0.0, 3.3.0, 6.3.0 │ path-to-regexp: Backtracking regular expressions cause ReDoS │
+│                │                │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-45296                   │
+│                │                │          │        ├───────────────────┤                                    │                                                              │
+│                │                │          │        │ 1.8.0             │                                    │                                                              │
+│                │                │          │        │                   │                                    │                                                              │
+│                │                │          │        ├───────────────────┤                                    │                                                              │
+│                │                │          │        │ 2.2.1             │                                    │                                                              │
+│                │                │          │        │                   │                                    │                                                              │
+├────────────────┼────────────────┼──────────┤        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ send           │ CVE-2024-43799 │ MEDIUM   │        │ 0.18.0            │ 0.19.0                             │ send: Code Execution Vulnerability in Send Library           │
+│                │                │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-43799                   │
+├────────────────┼────────────────┤          │        ├───────────────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ serve-static   │ CVE-2024-43800 │          │        │ 1.15.0            │ 1.16.0, 2.1.0                      │ serve-static: Improper Sanitization in serve-static          │
+│                │                │          │        │                   │                                    │ https://avd.aquasec.com/nvd/cve-2024-43800                   │
+└────────────────┴────────────────┴──────────┴────────┴───────────────────┴────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
+
