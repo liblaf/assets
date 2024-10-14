@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkassets=self.webpackChunkassets||[]).push([[823],{9570:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"Letter","slug":"/category/letter","permalink":"/category/letter","sidebar":"defaultSidebar","navigation":{"previous":{"title":"PNG","permalink":"/avatar/png"},"next":{"title":"ICO","permalink":"/letter/ico"}}}}')}}]);
