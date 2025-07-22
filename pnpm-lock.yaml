@@ -12,8 +12,8 @@ dependencies:
     specifier: 3.5.2
     version: 3.5.2(@algolia/client-search@5.8.0)(@mdx-js/react@3.0.1)(@types/react@18.3.11)(react-dom@18.3.1)(react@18.3.1)(search-insights@2.17.2)(typescript@5.6.3)
   '@easyops-cn/docusaurus-search-local':
-    specifier: ^0.45.0
-    version: 0.45.0(@docusaurus/theme-common@3.5.2)(@docusaurus/types@3.5.2)(@mdx-js/react@3.0.1)(react-dom@18.3.1)(react@18.3.1)(typescript@5.6.3)
+    specifier: ^0.52.0
+    version: 0.52.1(@docusaurus/theme-common@3.5.2)(@docusaurus/types@3.5.2)(@mdx-js/react@3.0.1)(react-dom@18.3.1)(react@18.3.1)(typescript@5.6.3)
   '@mdx-js/react':
     specifier: ^3.0.0
     version: 3.0.1(@types/react@18.3.11)(react@18.3.1)
@@ -2442,13 +2442,13 @@ packages:
       immediate: 3.3.0
     dev: false
 
-  /@easyops-cn/docusaurus-search-local@0.45.0(@docusaurus/theme-common@3.5.2)(@docusaurus/types@3.5.2)(@mdx-js/react@3.0.1)(react-dom@18.3.1)(react@18.3.1)(typescript@5.6.3):
-    resolution: {integrity: sha512-ccJjeYmBHrv2v8Y9eQnH79S0PEKcogACKkEatEKPcad7usQj/14jA9POUUUYW/yougLSXghwe+uIncbuUBuBFg==}
+  /@easyops-cn/docusaurus-search-local@0.52.1(@docusaurus/theme-common@3.5.2)(@docusaurus/types@3.5.2)(@mdx-js/react@3.0.1)(react-dom@18.3.1)(react@18.3.1)(typescript@5.6.3):
+    resolution: {integrity: sha512-pwfANjTLOQyAPc2Iz93WbG4OQM5C4COCWARbLAs79FIpIS38gHq3PrbDIX8f7oDhGQp1u6f8fr3K3u3+yZXZTA==}
     engines: {node: '>=12'}
     peerDependencies:
       '@docusaurus/theme-common': ^2 || ^3
-      react: ^16.14.0 || ^17 || ^18
-      react-dom: ^16.14.0 || 17 || ^18
+      react: ^16.14.0 || ^17 || ^18 || ^19
+      react-dom: ^16.14.0 || 17 || ^18 || ^19
     dependencies:
       '@docusaurus/plugin-content-docs': 3.5.2(@mdx-js/react@3.0.1)(debug@4.3.7)(react-dom@18.3.1)(react@18.3.1)(typescript@5.6.3)
       '@docusaurus/theme-common': 3.5.2(@docusaurus/plugin-content-docs@3.5.2)(@docusaurus/types@3.5.2)(react-dom@18.3.1)(react@18.3.1)(typescript@5.6.3)
@@ -2459,7 +2459,8 @@ packages:
       '@easyops-cn/autocomplete.js': 0.38.1
       '@node-rs/jieba': 1.10.4
       cheerio: 1.0.0
-      clsx: 1.2.1
+      clsx: 2.1.1
+      comlink: 4.4.2
       debug: 4.3.7
       fs-extra: 10.1.0
       klaw-sync: 6.0.0
@@ -3965,11 +3966,6 @@ packages:
       kind-of: 6.0.3
       shallow-clone: 3.0.1
 
-  /clsx@1.2.1:
-    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
-    engines: {node: '>=6'}
-    dev: false
-
   /clsx@2.1.1:
     resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
     engines: {node: '>=6'}
@@ -4010,6 +4006,10 @@ packages:
   /combine-promises@1.2.0:
     resolution: {integrity: sha512-VcQB1ziGD0NXrhKxiwyNbCDmRzs/OShMs2GqW2DlU2A/Sd0nQxE1oWDAE5O0ygSx5mgQOn9eIFh7yKPgFRVkPQ==}
     engines: {node: '>=10'}
+    dev: false
+
+  /comlink@4.4.2:
+    resolution: {integrity: sha512-OxGdvBmJuNKSCMO4NTl1L47VRp6xn2wG4F/2hYzB6tiCb709otOxtEYCSvK80PtjODfXXZu8ds+Nw5kVCjqd2g==}
     dev: false
 
   /comma-separated-tokens@2.0.3:
